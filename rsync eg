@@ -1,1 +1,10 @@
 rsync --ignore-existing -raz --progress "Source" "Destination"
+
+
+## rsync to copy files from source to destination. Ignoring exisitng files.
+rsync --ignore-existing -raz --progress "Source" "Destination"
+rsync --ignore-existing -raz --progress "/Users/leeharrison/Documents/Sports Interactive/Football Manager 2019/graphics/sortitoutsi/faces/" "/Users/leeharrison/Documents/Football Manager 2018/graphics/sortitoutsi/faces/"
+
+## rsync to copy files from remote host (via ssh) to local host directory
+rsync --ignore-existing -raz --progress 192.168.0.33:"/Users/leeharrison/Documents/Sports\ Interactive/Football\ Manager\ 2019/games/*" "/Users/leeharrison/Documents/Sports Interactive/Football Manager 2019/games"
+rsync --ignore-existing -raz --progress 192.168.0.33:"/Users/leeharrison/Documents/Sports\ Interactive/Football\ Manager\ 2019/graphics/*" "/Users/leeharrison/Documents/Sports Interactive/Football Manager 2019/graphics"
